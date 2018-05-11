@@ -3,7 +3,7 @@
 ### Установка Zabbix скрипта и темплейта
 
 Поместить скрипт ssl_cert_check.sh для Zabbix Server в директорию для внешних скриптов, например: /usr/lib/zabbix/externalscripts
-Импортировать темплейт в `template_SSL_Cert_Check_External-2.0.xml` в Zabbix. Назначить на нужный хост.
+Импортировать темплейт `template_SSL_Cert_Check_External-2.0.xml` в Zabbix. Назначить на нужный хост.
 
 ##### Макросы в темплейте
 
