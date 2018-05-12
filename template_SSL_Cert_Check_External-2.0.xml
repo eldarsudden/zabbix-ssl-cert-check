@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2018-05-10T08:23:28Z</date>
+    <date>2018-05-12T15:19:19Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,7 +11,7 @@
         <template>
             <template>Template SSL Cert Check External</template>
             <name>Template SSL Cert Check External</name>
-            <description />
+            <description/>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -26,136 +26,133 @@
                 <item>
                     <name>HTTPS Service is running</name>
                     <type>3</type>
-                    <snmp_community />
-                    <snmp_oid />
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
                     <key>net.tcp.service[https]</key>
                     <delay>90</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
-                    <allowed_hosts />
-                    <units />
-                    <snmpv3_contextname />
-                    <snmpv3_securityname />
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase />
+                    <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase />
-                    <params />
-                    <ipmi_sensor />
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username />
-                    <password />
-                    <publickey />
-                    <privatekey />
-                    <port />
-                    <description />
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
                     <inventory_link>0</inventory_link>
-                    <applications />
+                    <applications/>
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
-                    <logtimefmt />
-                    <preprocessing />
-                    <jmx_endpoint />
-                    <master_item />
-                </item>
-                <item>
-                    <name>{$SNI} SSL certificate validity</name>
-                    <type>10</type>
-                    <snmp_community />
-                    <snmp_oid />
-                    <key>ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}]</key>
-                    <delay>14400</delay>
-                    <history>7</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts />
-                    <units>days</units>
-                    <snmpv3_contextname />
-                    <snmpv3_securityname />
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase />
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase />
-                    <params />
-                    <ipmi_sensor />
-                    <authtype>0</authtype>
-                    <username />
-                    <password />
-                    <publickey />
-                    <privatekey />
-                    <port />
-                    <description />
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>SSL certificate</name>
-                        </application>
-                    </applications>
-                    <valuemap />
-                    <logtimefmt />
-                    <preprocessing />
-                    <jmx_endpoint />
-                    <master_item />
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>SSL certificate issuer</name>
                     <type>10</type>
-                    <snmp_community />
-                    <snmp_oid />
-                    <key>ssl_cert_check.sh[-i,{HOSTNAME},{$SSL_PORT},{$SNI}]</key>
-                    <delay>86400</delay>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ssl_cert_check.sh[-i,{HOST.CONN},{$SSL_PORT},{HOST.NAME}]</key>
+                    <delay>600</delay>
                     <history>7</history>
-                    <trends>0</trends>
+                    <trends>365</trends>
                     <status>0</status>
                     <value_type>4</value_type>
-                    <allowed_hosts />
-                    <units />
-                    <snmpv3_contextname />
-                    <snmpv3_securityname />
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
                     <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase />
+                    <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase />
-                    <params />
-                    <ipmi_sensor />
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
-                    <username />
-                    <password />
-                    <publickey />
-                    <privatekey />
-                    <port />
-                    <description />
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
                             <name>SSL certificate</name>
                         </application>
                     </applications>
-                    <valuemap />
-                    <logtimefmt />
-                    <preprocessing>
-                        <step>
-                            <type>3</type>
-                            <params>issuer= </params>
-                        </step>
-                    </preprocessing>
-                    <jmx_endpoint />
-                    <master_item />
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>SSL certificate validity</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}]</key>
+                    <delay>120</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>days</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SSL certificate</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
-            <discovery_rules />
+            <discovery_rules/>
             <macros>
-                <macro>
-                    <macro>{$SNI}</macro>
-                    <value>{HOSTNAME}</value>
-                </macro>
                 <macro>
                     <macro>{$SSL_EXPIRY_AVG}</macro>
                     <value>15</value>
@@ -177,176 +174,119 @@
                     <value>30</value>
                 </macro>
                 <macro>
-                    <macro>{$SSL_HOST}</macro>
-                    <value>{HOSTNAME}</value>
-                </macro>
-                <macro>
                     <macro>{$SSL_PORT}</macro>
                     <value>443</value>
                 </macro>
             </macros>
-            <templates />
-            <screens />
+            <templates/>
+            <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-i,{HOSTNAME},{$SSL_PORT},{$SNI}].change()}&gt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>Change in SSL Certificate Issuer</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url>https://{$SSL_HOST}:{$SSL_PORT}</url>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-i,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].change()}&gt;0</expression>
+            <name>SSL Certificate Issuer is changed</name>
+            <url>https://{HOST.NAME}:{$SSL_PORT}</url>
             <status>0</status>
             <priority>1</priority>
-            <description />
+            <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies />
-            <tags />
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(0)}&lt;0</expression>
+            <name>SSL certificate on {HOST.NAME} expired</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
+            <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
+                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
+            <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>SSL certificate on {HOST.NAME} expired</name>
+                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(0)}&lt;0</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
+            <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
+                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_NOTCLASSIFIED}</expression>
+            <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_NOTCLASSIFIED} days ({ITEM.VALUE} days remaining)</name>
+            <url/>
+            <status>0</status>
+            <priority>0</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
+                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
+            <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>SSL certificate on {HOST.NAME} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
+                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
+                </dependency>
+            </dependencies>
         </trigger>
         <trigger>
             <expression>{Template SSL Cert Check External:net.tcp.service[https].max(5m)}&lt;1</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>HTTPS Service is Down</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
+            <name>{HOST.NAME} HTTPS Service  is Down</name>
+            <url/>
             <status>0</status>
             <priority>2</priority>
-            <description />
+            <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies />
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(0)}&lt;0</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expired</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>5</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies />
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>3</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
-                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
-                    <recovery_expression />
-                </dependency>
-            </dependencies>
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_HIGH}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_HIGH} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>4</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>SSL certificate on {HOSTNAME} expired</name>
-                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(0)}&lt;0</expression>
-                    <recovery_expression />
-                </dependency>
-            </dependencies>
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>1</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
-                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
-                    <recovery_expression />
-                </dependency>
-            </dependencies>
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_NOTCLASSIFIED}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_NOTCLASSIFIED} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>0</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_INFO} days ({ITEM.VALUE} days remaining)</name>
-                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_INFO}</expression>
-                    <recovery_expression />
-                </dependency>
-            </dependencies>
-            <tags />
-        </trigger>
-        <trigger>
-            <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_WARN}</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression />
-            <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_WARN} days ({ITEM.VALUE} days remaining)</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag />
-            <url />
-            <status>0</status>
-            <priority>2</priority>
-            <description />
-            <type>0</type>
-            <manual_close>0</manual_close>
-            <dependencies>
-                <dependency>
-                    <name>SSL certificate on {HOSTNAME} expires in less than {$SSL_EXPIRY_AVG} days ({ITEM.VALUE} days remaining)</name>
-                    <expression>{Template SSL Cert Check External:ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}].last(5)}&lt;{$SSL_EXPIRY_AVG}</expression>
-                    <recovery_expression />
-                </dependency>
-            </dependencies>
-            <tags />
+            <dependencies/>
         </trigger>
     </triggers>
     <graphs>
@@ -377,10 +317,10 @@
                     <type>0</type>
                     <item>
                         <host>Template SSL Cert Check External</host>
-                        <key>ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{$SNI}]</key>
+                        <key>ssl_cert_check.sh[-d,{HOST.CONN},{$SSL_PORT},{HOST.NAME}]</key>
                     </item>
                 </graph_item>
             </graph_items>
         </graph>
     </graphs>
-    </zabbix_export>
+</zabbix_export>
